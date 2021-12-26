@@ -10,6 +10,7 @@ import com.java.mainClass.comparator.IfIdSameSortByNameCompare;
 import com.java.mainClass.comparator.NameCompare;
 import com.java.mainClass.immutable.Address;
 import com.java.mainClass.immutable.ImmutableClass;
+import com.java.mainClass.stream.StreamClass;
 
 public class MainClass {
 
@@ -19,6 +20,7 @@ public class MainClass {
 		MainClass mainClass = new MainClass();
 		mainClass.handlingImmutableClass();
 		mainClass.handlingSorting();
+		mainClass.handleStreamClass();
 	}
 
 	public void handlingSorting() {
@@ -56,5 +58,12 @@ public class MainClass {
 		System.out.println("Before ImmutableClass Hobbies: "+immutableClass.getHobbies());
 		immutableClass.getHobbies().add("Listening to Music");
 		System.out.println("After ImmutableClass Hobbies: "+immutableClass.getHobbies());
+	}
+
+
+	public void handleStreamClass() {
+		StreamClass streamClass = new StreamClass();
+		streamClass.getEmployeeMobilesMap();
+		streamClass.getEmployeeMobilesFlatMap();
 	}
 }
