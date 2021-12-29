@@ -3,8 +3,8 @@ package com.java.mainClass.stream;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.java.mainClass.comparator.Employee;
-import com.java.mainClass.comparator.EmployeeDatabase;
+import com.java.collections.model.Employee;
+import com.java.collections.model.EmployeeDatabase;
 
 public class StreamClass {
 

@@ -1,4 +1,4 @@
-package com.java.mainClass.comparable;
+package com.java.collections.comparable;
 
 import java.util.List;
 

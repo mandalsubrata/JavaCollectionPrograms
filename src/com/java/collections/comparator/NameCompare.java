@@ -1,8 +1,11 @@
-package com.java.mainClass.comparator;
+package com.java.collections.comparator;
 
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
+import com.java.collections.model.Employee;
+import com.java.collections.model.EmployeeDatabase;
 
 public class NameCompare implements Comparator<Employee>{
 
