@@ -3,13 +3,17 @@ package com.java.mainClass;
 import java.util.Arrays;
 import java.util.Date;
 
-import com.java.mainClass.comparable.SortStudentBasedOnID;
-import com.java.mainClass.comparable.SortStudentBasedOnName;
-import com.java.mainClass.comparator.IdCompare;
-import com.java.mainClass.comparator.IfIdSameSortByNameCompare;
-import com.java.mainClass.comparator.NameCompare;
+import com.java.collections.comparable.SortStudentBasedOnID;
+import com.java.collections.comparable.SortStudentBasedOnName;
+import com.java.collections.comparator.IdCompare;
+import com.java.collections.comparator.IfIdSameSortByNameCompare;
+import com.java.collections.comparator.NameCompare;
 import com.java.mainClass.immutable.Address;
 import com.java.mainClass.immutable.ImmutableClass;
+import com.java.mainClass.mapinterface.HashMapClass;
+import com.java.mainClass.sorting.ListSorting;
+import com.java.mainClass.sorting.TreeMapSorting;
+import com.java.mainClass.sorting.HashMapSorting;
 import com.java.mainClass.stream.StreamClass;
 
 public class MainClass {
@@ -21,6 +25,30 @@ public class MainClass {
 		mainClass.handlingImmutableClass();
 		mainClass.handlingSorting();
 		mainClass.handleStreamClass();
+
+		HashMapClass hashMapClass = new HashMapClass();
+		hashMapClass.setMap();
+
+		mainClass.handlingMapSorting();
+
+		mainClass.handlingListSorting();
+	}
+
+	public void handlingListSorting() {
+		ListSorting listSorting = new ListSorting();
+		listSorting.primitiveSort();
+		listSorting.objectListSort();
+	}
+
+	public void handlingMapSorting() {
+		HashMapSorting mapSorting = new HashMapSorting();
+		mapSorting.sortByPremitiveData();
+		mapSorting.sortByObjectKeyName();
+		mapSorting.sortByObjectKeyEmail();
+		mapSorting.sortByObjectKeyEmailReverse();
+
+		TreeMapSorting sorting = new TreeMapSorting();
+		sorting.getTreemapSortingUsingReference();
 	}
 
 	public void handlingSorting() {
@@ -37,7 +65,7 @@ public class MainClass {
 		System.out.println("Comparator by Id: "+ compareId.getEmployees());
 
 		IfIdSameSortByNameCompare ifIdSameSortByNameCompare = new IfIdSameSortByNameCompare();
-		System.out.println("Comparator by Id: "+ ifIdSameSortByNameCompare.getEmployees());
+		System.out.println("Comparator by same Id but different name: "+ ifIdSameSortByNameCompare.getEmployees());
 	}
 
 	public void handlingImmutableClass() {

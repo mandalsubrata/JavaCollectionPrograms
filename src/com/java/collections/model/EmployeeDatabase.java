@@ -1,4 +1,4 @@
-package com.java.mainClass.comparator;
+package com.java.collections.model;
 
 import java.util.Arrays;
 import java.util.List;
