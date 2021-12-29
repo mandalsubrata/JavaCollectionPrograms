@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 public class EmployeeDatabase {
 	
-	public static List<Employee> getAllStudents(){
+	public static List<Employee> getAllEmployees(){
 		return Stream.of(
 				new Employee(11,"Subrata Mandal","subratamandal294@gmail.com",Arrays.asList("545435345","243355")),
 				new Employee(100,"Susmita Mandal","susmitamandal294@gmail.com",Arrays.asList("9882972624","32342342")),

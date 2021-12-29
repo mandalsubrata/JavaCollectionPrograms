@@ -12,7 +12,7 @@ public class IdCompare implements Comparator<Employee>{
 	}
 	
 	public List<Employee> getEmployees() {
-		List<Employee> list = EmployeeDatabase.getAllStudents();
+		List<Employee> list = EmployeeDatabase.getAllEmployees();
 		Collections.sort(list, new IdCompare());
 		return list;
 	}
